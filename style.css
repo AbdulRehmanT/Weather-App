@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #62b8f5, #4475ef);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    height: 100vh;
+    align-items: center;
+}
+
+.container {
+    max-width: 90%;
+    max-width: 28em;
+    position: absolute;
+}
+
+.shape {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(1.2em);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.shape-1 {
+    height: 13em;
+    width: 13em;
+    right: -6.5em;
+    top: 1.8em;
+}
+
+.shape-2 {
+    height: 11em;
+    width: 11em;
+    bottom: -3.7em;
+    left: -2.5em;
+}
+
+.input-section {
+    padding: 3em 1.8em;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1.8em 3.7em rgba(3, 46, 87, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.6em;
+    text-align: center;
+    flex-direction: column;
+}
+
+.input-section input,
+.input-section button {
+    padding: 0.7em;
+    font-size: 16px;
+    border: none;
+}
+
+.input-section input {
+    background-color: transparent;
+    border-bottom: 2px solid #e5e5e5;
+    color: #e5e5e5;
+    font-weight: 700;
+}
+
+.input-section input::placeholder {
+    color: #e5e5e5;
+}
+
+.input-section input:focus {
+    border-color: #ffff;
+}
+
+
+.input-section button {
+    background-color: #023047;
+    color: #e5e5e5;
+    border-radius: 0.2em;
+    min-width: 40px;
+}
+
+.output-section {
+    margin: 30px 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.output-section h2 {
+    color: #e5e5e5;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 300;
+    margin: 1.25em 0;
+}
+
+#temperature {
+    color: #e5e5e5;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 2em;
+    margin-top: -0.7em
+}
+
+#weather-img {
+    margin: 0.6em 0 0 0;
+    width: 6.2em;
+    filter: drop-shadow(0 1.8em 3.7em rgba(3,46,87,0.2))
+}

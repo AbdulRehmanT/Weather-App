@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-container flex">
+        <div class="container">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="input-section flex" id="user-input">
+                <form id="get-weather">
+                    <input type="text" placeholder="Enter Your Location" id="location">
+                    <button id="search-btn">Search</button>
+                </form>
+
+                <div class="output-section" id="result">
+                    <h2 id="loc-name"></h2>
+                    <p id="message"></p>
+                    <img src="" alt="" id="weather-img">
+                    <p id="temperature"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
